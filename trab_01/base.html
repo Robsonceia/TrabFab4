@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciamento de Eventos</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="{'pagina_inicial.html'}">Página Inicial</a></li>
+            <li><a href="{'criar_evento.html'}">Criar Evento</a></li>
+            <li><a href="{'excluir_evento.html'}">Excluir Evento</a></li>
+            <li><a href="{'editar_evento.html'}">Editar Evento</a></li>
+            <li><a href="{'detalhe_evento.html'}">Detalhe Evento</a></li>
+
+        </ul>
+    </nav>
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+</body>
+</html>

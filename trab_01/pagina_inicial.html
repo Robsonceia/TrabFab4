@@ -1,0 +1,11 @@
+<!-- pagina_inicial.html -->
+
+{% extends 'base.html' %}
+{% block content %}
+  <h1>Página Inicial</h1>
+  <ul>
+    {% for evento in eventos %}
+      <li><a href="{% url 'detalhe_evento.html' evento.id %}">{{ evento.titulo }}</a> - {{ evento.data_inicio }}</li>
+    {% endfor %}
+  </ul>
+{% endblock %}
